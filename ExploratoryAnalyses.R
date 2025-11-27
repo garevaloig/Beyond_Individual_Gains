@@ -22,7 +22,7 @@ library(fastDummies)
 library(corrplot)
 library(viridis)
 
-setwd("D:/BIGSSS/Dissertation/Study 3 with Martin Gurin/Scripts/2016Data")
+setwd("D:/BIGSSS/Dissertation/Study 3/Scripts/2016Data")
 load("DataStudy3_2016.RData")
 
 #############################
@@ -2307,4 +2307,5 @@ corhhinc_plot<-p1/p2+plot_layout(heights=c(2,1));print(corhhinc_plot)
 agg_png("Exploratory_Cor_hhinc.png", width = 1500, height = 1000, units = "px", res = 144)
 corhhinc_plot
 dev.off()
+
 
