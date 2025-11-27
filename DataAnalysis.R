@@ -21,7 +21,7 @@ library(dplyr)
 library(MASS)
 library(brant)
 
-setwd("D:/BIGSSS/Dissertation/Study 3 with Martin Gurin/Scripts/2016Data")
+setwd("D:/BIGSSS/Dissertation/Study 3/Scripts/2016Data")
 load("DataStudy3_2016.RData")
 
 #load("MICEModels_P3.RData") # Instead of fitting the models every time, given computation times
@@ -685,7 +685,7 @@ ggplot(mfx_lines, aes(x = x, y = predicted, color = group)) +
   geom_line(size = 1.1) +
   geom_ribbon(aes(ymin = conf.low, ymax = conf.high, fill = group), alpha = 0.15, color = NA) +
   labs(
-    title = "Interaction Effect: average_FRR_workp × age_ychild",
+    title = "Interaction Effect: average_FRR_workp Ã— age_ychild",
     x = "Average FRR for working parents",
     y = "Preferences for Work Family Balance Policies",
     color = "Youngest Child's Age",
@@ -1149,3 +1149,4 @@ mean(sapply(lm4_4$analyses, function(model) {
   as.numeric(VarCorr(model))  # Extract mean variance of random intercept
 })
 )
+
