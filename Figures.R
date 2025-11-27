@@ -18,7 +18,7 @@ library(MASS)
 library(brant)
 library(tidyr)
 
-setwd("D:/BIGSSS/Dissertation/Study 3 with Martin Gurin/Scripts/2016Data")
+setwd("D:/BIGSSS/Dissertation/Study 3/Scripts/2016Data")
 load("DataStudy3_2016.RData")
 
 load("RSModels_P3.RData")
@@ -1402,4 +1402,5 @@ rsl_M2.2<-RSModels[[7]]
 rsl_M2.3<-RSModels[[8]]
 rsl_M2.4<-RSModels[[9]]
 rsl_M2.5<-RSModels[[10]]
+
 rsl_M2.6<-RSModels[[11]]
