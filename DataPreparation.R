@@ -15,7 +15,7 @@ library(foreign)
 library(readxl)
 library(forcats)
 
-setwd("D:/BIGSSS/Dissertation/Study 3 with Martin Gurin/Scripts/2016Data")
+setwd("D:/BIGSSS/Dissertation/Study 3/Scripts/2016Data")
 
 ESS16<-read.spss("ESS8e02_2.sav") # Main questionnaire variables
 ESS16<-rbind.data.frame(ESS16)
@@ -2702,5 +2702,6 @@ data_p3$age_ychild[which(data_p3$age_ychild_num>=12 & data_p3$age_ychild_num<=17
 
 save(ESS16,file="ESS16_Analysis.RData")
 save(list=ls(),file="DataStudy3_2016.RData")
+
 
 load("DataStudy3_2016.RData")
